@@ -6,11 +6,8 @@ First you need a data model
 <pre>
     public class Person
     {
-        [DynamicParameter(true, "@id", DbType.Int32)
         public int Id { get; set; }
-        [DynamicParameter(false, "@description", DbType.AnsiString, Scalar = 140)
         public string Description { get; set; }
-        [DynamicParameter(false, "@description", DbType.AnsiString, Scalar = 20)
         public string FirstName { get; set; }
     }
 </pre>
