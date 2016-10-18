@@ -84,4 +84,11 @@ then to use your new parameters in a query you simple do
   SqlConn.Query("dbo.InsertPerson", params, commandType: CommandType.StoredProcedure);
 </pre>
 
+To add this to your Dot NET Projects 
+add this to your package sources
+https://www.myget.org/F/picturra/api/v3/index.json
+use the following nuget command
+<pre>
+Install-Package DynamicParameterHelper -Version 1.0.0-CI00001
+</pre>
 
